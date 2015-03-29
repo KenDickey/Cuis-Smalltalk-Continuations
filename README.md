@@ -1,7 +1,7 @@
 # Cuis-Smalltalk-Continuations
 ==============================
 
-Package is trivil port of the SeaSide code for Continuations open under MIT Licence.
+Package is trivial port of the SeaSide code for Continuations open under MIT Licence.
 
 Tested in Cuis 4.2 rev 2203.
 
