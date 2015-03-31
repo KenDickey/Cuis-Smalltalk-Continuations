@@ -1,6 +1,6 @@
-'From Cuis 4.2 of 25 July 2013 [latest update: #2207] on 31 March 2015 at 8:08:36.624664 am'!
+'From Cuis 4.2 of 25 July 2013 [latest update: #2207] on 31 March 2015 at 8:23:31.218815 am'!
 'Description Trivial port of Continuations from SeaSide'!
-!provides: 'Control-Continuations' 1 4!
+!provides: 'Control-Continuations' 1 6!
 !classDefinition: #Continuation category: #'Control-Continuations'!
 Object subclass: #Continuation
 	instanceVariableNames: 'values'
@@ -92,7 +92,10 @@ The Transcript shows:
 1
 3
 nil
-	
+
+"====== Select Text Below + DoIt ============"
+TranscriptWindow openTranscript.
+Transcript clear.
 Continuation currentDo: [ :break | 
    1 to: 5 do: [ :index |
       Continuation currentDo: [ :continue |
